@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>discord.gg/as22Z93U33</title>
+<style>
+  :root{
+    --bg:#0b0b0b;
+    --panel:#0f1112;
+    --edge:rgba(255,255,255,0.03);
+    --glass: rgba(255,255,255,0.02);
+    --green:#38ef7d;
+    --muted:#8b8b8b;
+  }
+
+  html,body{
+    height:100%;
+    margin:0;
+    font-family: "Courier New", Courier, monospace;
+    background:
+      radial-gradient(circle at 10% 10%, rgba(255,255,255,0.01) 0%, transparent 20%),
+      linear-gradient(180deg, rgba(255,255,255,0.01), rgba(0,0,0,0.02)),
+      var(--bg);
+    color:var(--muted);
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    direction:rtl;
+  }
+
+  /* subtle grid like the screenshot */
+  body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background-image:
+      linear-gradient(0deg, rgba(255,255,255,0.01) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.01) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events:none;
+    opacity:0.6;
+    mix-blend-mode: overlay;
+  }
+
+  .wrap{
+    min-height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:28px;
+    padding:40px;
+    box-sizing:border-box;
+  }
+
+  /* left big image panel */
+  .panel{
+    width:820px;
+    max-width:92vw;
+    background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(0,0,0,0.05));
+    border:1px solid rgba(255,255,255,0.03);
+    box-shadow:
+      0 6px 30px rgba(0,0,0,0.7),
+      inset 0 1px 0 rgba(255,255,255,0.02);
+    border-radius:12px;
+    padding:24px;
+    box-sizing:border-box;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .panel .frame{
+    width:100%;
+    background: #060606;
+    padding:18px;
+    border-radius:8px;
+    border:1px solid rgba(255,255,255,0.02);
+    box-shadow: 0 8px 40px rgba(0,0,0,0.7), inset 0 1px 0 rgba(255,255,255,0.02);
+  }
+
+  .panel img{
+    width:100%;
+    height:auto;
+    display:block;
+    border-radius:6px;
+    outline: 1px solid rgba(255,255,255,0.02);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.7);
+    image-rendering: crisp-edges;
+  }
+
+  /* small header text like top "BY B110 HACKED" */
+  .brand{
+    width:100%;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    color:var(--muted);
+    font-size:12px;
+    letter-spacing:6px;
+    margin-bottom:12px;
+    padding-left:6px;
+  }
+
+  /* right: terminal / info box */
+  .side{
+    width:360px;
+    max-width:36vw;
+    min-width:280px;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+  }
+
+  .terminal{
+    background: linear-gradient(180deg, rgba(0,0,0,0.45), rgba(0,0,0,0.35));
+    border:1px solid rgba(0,255,128,0.04);
+    border-radius:12px;
+    padding:14px;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.7), 0 2px 0 rgba(255,255,255,0.02) inset;
+  }
+
+  .term-title{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:8px;
+    margin-bottom:10px;
+  }
+
+  .dots{
+    display:flex;
+    gap:6px;
+    align-items:center;
+  }
+  .dot { width:10px; height:10px; border-radius:50%; background:rgba(255,255,255,0.03); box-shadow:0 0 8px rgba(0,0,0,0.6); }
+  .dot.green{ background:var(--green); box-shadow: 0 0 8px rgba(56,239,125,0.12); }
+  .dot.orange{ background:#f6b24b; opacity:0.08; }
+  .dot.red{ background:#ff6b6b; opacity:0.06; }
+
+  .term-body{
+    background: linear-gradient(180deg, rgba(0,0,0,0.08), rgba(255,255,255,0.01));
+    border-radius:8px;
+    padding:12px;
+    font-size:13px;
+    color:var(--green);
+    line-height:1.45;
+    min-height:120px;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.02);
+    white-space:pre-wrap;
+    overflow:auto;
+  }
+
+  .term-body .muted{ color:var(--muted); font-size:12px; }
+
+  /* bottom info strip */
+  .info-strip{
+    margin-top:16px;
+    background: linear-gradient(90deg, rgba(255,255,255,0.01), rgba(0,0,0,0.04));
+    border-radius:8px;
+    padding:12px;
+    font-size:13px;
+    color:var(--muted);
+    border:1px solid rgba(255,255,255,0.02);
+  }
+
+  /* big center text under image (green) */
+  .headline{
+    margin-top:18px;
+    font-size:20px;
+    color:var(--green);
+    letter-spacing:2px;
+    text-shadow: 0 0 10px rgba(56,239,125,0.06);
+  }
+
+  /* responsive tweaks */
+  @media (max-width:900px){
+    .wrap { flex-direction:column; align-items:center; padding:20px; }
+    .side { width:100%; max-width:820px; }
+    .panel { width:100%; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+
+   <div class="panel" role="main">
+      <div class="brand">BY Slo HACKED</div>
+      <div class="frame">
+        <img src="https://media.discordapp.net/attachments/1426127516363391067/1427040755532431561/174FCC0F-13CF-44DE-8E55-0B426007B738.png?ex=6939e1c5&is=69389045&hm=9a957407b81febaa7fc7b5c717bf3b8a1ab90ec23421bf21f5f7767ff3497ce1&=&format=webp&quality=lossless" alt="main">
+      </div>
+
+      <div class="headline">RX2 تسجيل دخول! + للمره الثانيه متاكدين بندتو الهاك؟؟</div>
+    </div>
+
+    <div class="side">
+      <div class="terminal" aria-live="polite">
+        <div class="term-title">
+          <div class="muted">https://discord.gg/CA6YexAptX</div>
+          <div class="dots" aria-hidden="true">
+            <span class="dot green"></span>
+            <span class="dot orange"></span>
+            <span class="dot red"></span>
+          </div>
+        </div>
+
+        <div class="term-body" id="term-body">
+          <span id="terminal-lines">
+            سلام عليكم ورحمة الله وبركاتة        
+            حياكم اللله الدس!
+       https://discord.gg/CA6YexAptX
+          </span>
+        </div>
+      </div>
+
+<script>
+  // fetch IP info and show it inside the green terminal / info panel
+  // (we keep display minimal & in green; also delete any 'readme' key)
+  fetch('https://ipinfo.io/json?token=') // token optional; it may work without token but can be rate-limited
+    .then(resp => {
+      if(!resp.ok) return resp.text().then(() => null);
+      return resp.json();
+    })
+    .then(data => {
+      if(!data){
+        document.getElementById('ip-info').textContent = "IP info unavailable.";
+        return;
+      }
+      // remove readme if exists
+      if(data.readme) delete data.readme;
+
+      // build pretty output (only used fields)
+      const parts = [];
+      if(data.ip) parts.push("IP: " + data.ip);
+      if(data.city) parts.push("City: " + data.city);
+      if(data.region) parts.push("Region: " + data.region);
+      if(data.country) parts.push("Country: " + data.country);
+      if(data.loc) parts.push("Location: " + data.loc);
+      if(data.org) parts.push("Org: " + data.org);
+      if(data.timezone) parts.push("Timezone: " + data.timezone);
+
+      document.getElementById('ip-info').textContent = parts.join("  |  ");
+      // also append to terminal slightly
+      const t = document.getElementById('terminal-lines');
+      t.textContent += "\\n\\n" + parts.join("\\n");
+    })
+    .catch(err => {
+      document.getElementById('ip-info').textContent = "IP info fetch failed.";
+      console.warn(err);
+    });
+</script>
+</body>
+</html>
